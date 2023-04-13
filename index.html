@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> 五子棋 </title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" /> 
+</head>
+<body>
+    <div class="header">
+        AI五子棋
+    </div>
+    <div class="gobang">
+        <div class="board">
+            <canvas id="chessboard" width="450px" height="450px"></canvas>
+        </div>
+        <div class="buttons">
+            <div class="button" onclick="initGame(true)" name="meFirst" style="display:inline-block">电脑先手</div>
+            <div class="button" onclick="initGame(false)" name="computerFirst" style="display:inline-block">玩家先手</div>
+            <div class="button" onclick="draw.cleanBoard()" name="restart" style="display:none">重新开始</div>
+            <div class="button" onclick="goBack()" name="goBack" style="display:none">悔棋</div>
+        </div>
+    </div>
+</body>
+<script src="js/constant.js"></script>
+<script src="js/calculation.js"></script>
+<script src="js/array.js"></script>
+<script src="js/random.js"></script>
+<script src="js/zobrist.js"></script>
+<script src="js/UI.js"></script>
+<script src="js/board.js"></script>
+<script src="js/evaluation.js"></script>
+<script src="js/vcx.js"></script>
+<script src="js/search.js"></script>
+</html>
+
+
